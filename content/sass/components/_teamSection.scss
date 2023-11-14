@@ -1,0 +1,34 @@
+section.team{
+  .content{
+    @include displayGrid(256px , 20px);
+    padding: 15px 0 0;
+    .member-box{
+      position: relative;
+      margin-bottom: 60px;
+      .image-wrapper{
+        height: 310px;
+      }
+      .member-info{
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $mainColor;
+        min-width: 250px;
+        padding: 11px 9px;
+        h3{
+          font-size: 25px;
+          font-weight: 700;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+        h4{
+          font-size: 25px;
+          font-weight: 400;
+          margin-bottom: 0;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}

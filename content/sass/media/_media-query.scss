@@ -1,0 +1,71 @@
+@media (max-width:1200px){
+  .navbar{
+    .content{
+      .main-btn{
+        min-width: 100px;
+      }
+    }
+  }
+}
+@media (max-width:991px){
+  .navbar .content .left .mobile-navbar{
+    display: block;
+  }
+  .navbar .content ul.nav-links{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    overflow: hidden;
+    height: 0%;
+    background: #fff;
+    box-shadow: 0 0 6px #000000bd;
+    @include displayFlex(start , flex-start , 50px);
+    flex-direction: column;
+    padding-inline-start: 24px;
+    padding-top: 0px;
+    z-index: 9;
+    li{
+      color: #000;
+      a:not(.main-btn){
+        &:hover{
+          color: $greenColor;
+          border-bottom: 1px solid $greenColor;
+        }
+      }
+    }
+  }
+  .about-us .content{
+    flex-wrap: wrap;
+    .image-wrapper{
+      margin: 0 10px;
+    }
+  }
+}
+@media (max-width:767px){
+  .homepage-slider .item .slider-text h1{
+    font-size: 35px;
+  }
+  .homepage-slider .item .slider-text .text{
+    font-size: 20px;
+  }
+  section.contact .form-wrapper{
+    flex-direction: column-reverse;
+    padding: 30px 15px;
+  }
+}
+@media (max-width:560px){
+  .navbar .content .left{
+    gap: 15px;
+  }
+  .navbar .content .left .main-btn{
+    font-size: 13px;
+  }
+  .homepage-slider .item .slider-text h1{
+    font-size: 25px;
+  }
+  .homepage-slider .item .slider-text .text{
+    font-size: 16px;
+  }
+}
+// @media (max-width:400px){}

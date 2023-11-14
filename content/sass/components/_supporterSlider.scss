@@ -1,0 +1,9 @@
+section.supporters-slider{
+  direction: ltr;
+  .image-wrapper{
+    max-width: 105px;
+  }
+  .owl-nav , .owl-dots{
+    display: none;
+  }
+}

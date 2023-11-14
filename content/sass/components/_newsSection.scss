@@ -1,0 +1,49 @@
+.news{
+  .content{
+    @include displayGrid( 265px , 35px );
+    margin: 45px 0;
+    .news-box{
+      .image-wrapper{
+        height: 260px;
+        margin-bottom: 10px;
+      }
+      h3{
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #000;
+      }
+      .text{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        max-height: 60px;
+        line-height: 29px;
+        overflow: hidden;
+      }
+      a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        color: $mainColor;
+        &:hover{
+          svg{
+            transform: translateX(-22px);
+          }
+        }
+        span{
+          font-size: 23px;
+          font-weight: 700;
+        }
+        svg{
+          font-size: 25px;
+          font-weight: 700;
+          padding-top: 5px;
+        transition: $transition7;
+
+        }
+      }
+    }
+  }
+}

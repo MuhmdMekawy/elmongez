@@ -1,0 +1,27 @@
+// ####################import abstract ###################
+
+@import '../sass/abstract/variables';
+@import '../sass/abstract/mixins';
+@import '../sass/abstract/generic';
+
+// ###################import layout #######################
+
+@import '../sass/layout/navbar';
+@import '../sass/layout/footer';
+
+
+
+
+// #################### import components #####################
+@import '../sass/components/homeSlider';
+@import '../sass/components/aboutusSection';
+@import '../sass/components/servicesSection';
+@import '../sass/components/newsSection';
+@import '../sass/components/counterSection';
+@import '../sass/components/teamSection';
+@import '../sass/components/contactSection';
+@import '../sass/components/supporterSlider';
+
+// ###################import media query ##################
+
+@import '../sass/media/media-query';
