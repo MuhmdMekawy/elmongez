@@ -22,6 +22,12 @@
 @import '../sass/components/contactSection';
 @import '../sass/components/supporterSlider';
 
-// ###################import media query ##################
+
+// ################import pages ###############################
+@import '../sass/pages/singlePage';
+@import '../sass/pages/questions';
+@import '../sass/pages/request';
+
+// ###################import media query ######################
 
 @import '../sass/media/media-query';

@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Almarai";
-  src: url("fonts/marai-font/Almarai-Regular.eot");
-  src: url("fonts/marai-font/Almarai-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/marai-font/Almarai-Regular.woff2") format("woff2"), url("fonts/marai-font/Almarai-Regular.woff") format("woff"), url("fonts/marai-font/Almarai-Regular.ttf") format("truetype"), url("fonts/marai-font/Almarai-Regular.svg#Almarai-Regular") format("svg");
+  src: url("../fonts/marai-font/Almarai-Regular.eot");
+  src: url("../fonts/marai-font/Almarai-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/marai-font/Almarai-Regular.woff2") format("woff2"), url("../fonts/marai-font/Almarai-Regular.woff") format("woff"), url("../fonts/marai-font/Almarai-Regular.ttf") format("truetype"), url("../fonts/marai-font/Almarai-Regular.svg#Almarai-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Almarai";
-  src: url("fonts/marai-font/Almarai-Bold.eot");
-  src: url("fonts/marai-font/Almarai-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/marai-font/Almarai-Bold.woff2") format("woff2"), url("fonts/marai-font/Almarai-Bold.woff") format("woff"), url("fonts/marai-font/Almarai-Bold.ttf") format("truetype"), url("fonts/marai-font/Almarai-Bold.svg#Almarai-Bold") format("svg");
+  src: url("../fonts/marai-font/Almarai-Bold.eot");
+  src: url("../fonts/marai-font/Almarai-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/marai-font/Almarai-Bold.woff2") format("woff2"), url("../fonts/marai-font/Almarai-Bold.woff") format("woff"), url("../fonts/marai-font/Almarai-Bold.ttf") format("truetype"), url("../fonts/marai-font/Almarai-Bold.svg#Almarai-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Almarai";
-  src: url("fonts/marai-font/Almarai-Light.eot");
-  src: url("fonts/marai-font/Almarai-Light.eot?#iefix") format("embedded-opentype"), url("fonts/marai-font/Almarai-Light.woff2") format("woff2"), url("fonts/marai-font/Almarai-Light.woff") format("woff"), url("fonts/marai-font/Almarai-Light.ttf") format("truetype"), url("fonts/marai-font/Almarai-Light.svg#Almarai-Light") format("svg");
+  src: url("../fonts/marai-font/Almarai-Light.eot");
+  src: url("../fonts/marai-font/Almarai-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/marai-font/Almarai-Light.woff2") format("woff2"), url("../fonts/marai-font/Almarai-Light.woff") format("woff"), url("../fonts/marai-font/Almarai-Light.ttf") format("truetype"), url("../fonts/marai-font/Almarai-Light.svg#Almarai-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -128,6 +128,8 @@ textarea {
   outline: none;
   width: 100%;
   border: 0;
+  direction: inherit;
+  color: inherit;
 }
 input:focus,
 select:focus,
@@ -235,12 +237,12 @@ input:-internal-autofill-selected {
   margin: auto;
 }
 .head .text {
-  max-height: 90px;
+  max-height: 50px;
   font-size: 29px;
   font-weight: 400;
   line-height: 1.6;
   color: #EBD291;
-  max-width: 532px;
+  max-width: 595px;
 }
 .head.borderd {
   border: 1px solid #EBD291;
@@ -895,6 +897,7 @@ section.services .content + .main-btn {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -1001,14 +1004,13 @@ section.contact .form-wrapper {
   width: 100%;
   max-width: 995px;
   margin: 45px auto;
-  padding: 53px 15px;
+  padding: 53px 50px;
   border-radius: 20px 60px;
   background: #FFF;
   -webkit-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.25);
 }
 section.contact .form-wrapper .map {
-  max-width: 383px;
   width: 100%;
   height: 460px;
   border-radius: 20px;
@@ -1041,6 +1043,219 @@ section.supporters-slider .image-wrapper {
 }
 section.supporters-slider .owl-nav, section.supporters-slider .owl-dots {
   display: none;
+}
+
+.single-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.single-page .content .image-wrapper {
+  height: 519px;
+  max-width: 519px;
+  border-radius: 12px;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.single-page .content .singlepage-text h2 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 52px;
+  color: #000;
+  max-height: 53px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.single-page .content .singlepage-text h2 + .text {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 0;
+  max-width: 489px;
+  overflow: hidden;
+}
+
+.questions .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 22px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+  width: 100%;
+}
+.questions .content .accordion {
+  width: 100%;
+}
+.questions .content .accordion .accordion-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 22px;
+  background: #EBD291;
+  color: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.questions .content .accordion .accordion-title span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.questions .content .accordion .accordion-title .fa-minus {
+  display: none;
+}
+.questions .content .accordion .accordion-text {
+  border: 0.5px solid #777777;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #777;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+.questions .content .accordion.active .accordion-title {
+  border-radius: 12px 12px 0 0;
+}
+.questions .content .accordion.active .accordion-title .fa-plus {
+  display: none;
+}
+.questions .content .accordion.active .accordion-title .fa-minus {
+  display: initial;
+}
+
+.request .form-wrapper {
+  padding: 15px 0;
+}
+.request .form-wrapper .twice-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 11px;
+}
+.request .form-wrapper .input-wrapper, .request .form-wrapper textarea {
+  height: 55px;
+  border: 0.5px solid #777777;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #777777;
+}
+.request .form-wrapper textarea {
+  height: 271px;
+  min-height: 60px;
+  max-height: 271px;
+  margin-bottom: 21px;
+}
+.request .form-wrapper h3 {
+  font-size: 29px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+.request .form-wrapper .file-input {
+  height: 270px;
+  width: 100%;
+  background: #EBEBEB;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.request .form-wrapper .file-input::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background: #EBEBEB;
+  z-index: 3;
+}
+.request .form-wrapper .file-input input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #EBEBEB;
+  z-index: 1;
+  font-size: 0;
+  cursor: pointer;
+}
+.request .form-wrapper .file-input label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 5px;
+  background: #EBEBEB;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.request .form-wrapper .file-input label svg {
+  font-size: 80px;
+  color: #EBD291;
+}
+.request .form-wrapper .main-btn {
+  margin: 30px auto 0;
 }
 
 @media (max-width: 1200px) {
@@ -1110,6 +1325,20 @@ section.supporters-slider .owl-nav, section.supporters-slider .owl-dots {
             flex-direction: column-reverse;
     padding: 30px 15px;
   }
+  .questions .content .accordion .accordion-title span {
+    font-size: 16px;
+  }
+  .questions .content .accordion .accordion-text {
+    font-size: 14px;
+  }
+  .head .text {
+    font-size: 20px;
+    max-height: 70px;
+  }
+  .request .form-wrapper .file-input label {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (max-width: 560px) {
   .navbar .content .left {
@@ -1123,5 +1352,15 @@ section.supporters-slider .owl-nav, section.supporters-slider .owl-dots {
   }
   .homepage-slider .item .slider-text .text {
     font-size: 16px;
+  }
+  .head .title {
+    font-size: 26px;
+  }
+  .questions .content .accordion .accordion-title span {
+    font-size: 14px;
+  }
+  .questions .content .accordion .accordion-text {
+    padding: 10px;
+    font-size: 11px;
   }
 }

@@ -55,5 +55,13 @@ $(document).ready(function () {
       }
     }
   });
+  $('.accordion .accordion-text').slideUp(800)
+  $('.accordion.active .accordion-text').slideDown(800)
+  $('.accordion').click(function () {
+    $(this).toggleClass('active');
+    $(this).children('.accordion-text').slideToggle(800);
+    $(this).siblings('.accordion').removeClass('active').children('.accordion-text').slideUp(800);
+  });
+
 
 })

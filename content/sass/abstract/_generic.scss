@@ -108,8 +108,8 @@ textarea {
   outline: none;
   width: 100%;
   border: 0;
-
-
+  direction: inherit;
+  color: inherit;
   &:focus {
     outline: none;
   }
@@ -232,14 +232,14 @@ input:-internal-autofill-selected {
     }
   }
   .text {
-    max-height: 90px;
+    max-height: 50px;
     font-size: 29px;
     font-weight: 400;
     line-height: 1.6;
     // width: 50%;
     // margin: 0 auto 20px;
     color: $mainColor;
-    max-width: 532px;
+    max-width: 595px;
     
   }
 

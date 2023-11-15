@@ -1,0 +1,49 @@
+.questions{
+  .content{
+    @include displayFlex(start , center , 22px);
+    flex-direction: column;
+    padding-top: 15px;
+    width: 100%;
+    .accordion{
+      width: 100%;
+      .accordion-title{
+        @include displayFlex(center , space-between , 22px);
+        background: $mainColor;
+        color: #fff;
+        padding: 22px;
+        border-radius: 12px;
+        margin-bottom: 0;
+        cursor: pointer;
+        span{
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .fa-minus{
+          display: none;
+        }
+      }
+      .accordion-text{
+        border: 0.5px solid #777777;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #777;
+        border-radius: 0 0 12px 12px;
+        overflow: hidden;
+      }
+      &.active{
+        .accordion-title{
+          border-radius: 12px 12px 0 0 ;
+          .fa-plus{
+            display: none;
+          }
+          .fa-minus{
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+}

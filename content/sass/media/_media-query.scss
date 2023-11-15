@@ -53,6 +53,20 @@
     flex-direction: column-reverse;
     padding: 30px 15px;
   }
+  .questions .content .accordion .accordion-title span{
+    font-size: 16px;
+  }
+  .questions .content .accordion .accordion-text{
+    font-size: 14px;
+  }
+  .head .text{
+    font-size: 20px;
+    max-height: 70px;
+  }
+  .request .form-wrapper .file-input label{
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (max-width:560px){
   .navbar .content .left{
@@ -66,6 +80,16 @@
   }
   .homepage-slider .item .slider-text .text{
     font-size: 16px;
+  }
+  .head .title{
+    font-size: 26px;
+  }
+  .questions .content .accordion .accordion-title span{
+    font-size: 14px;
+  }
+  .questions .content .accordion .accordion-text{
+    padding: 10px;
+    font-size: 11px;
   }
 }
 // @media (max-width:400px){}
